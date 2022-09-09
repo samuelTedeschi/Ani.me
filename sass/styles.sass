@@ -2,31 +2,66 @@
 @use 'mixins'
 
 *
-    color: #FFFFFF
+   
 
 body
-    background:  #0C0C0C
+    background-color:  #0C0C0C
 
 .header
     display: flex
     justify-content: space-between
     align-items: center
+    @include mixins.container-header
 
 .logo
     color: #00A3FF
+    font-family: variables.$rubik-font-family
+    font-weight: 500
+    font-size: 40px
 
 nav 
+    display: flex
+        
     ul
         display: flex
 
         li
             list-style: none
             margin: 0 25px
+            font-family: variables.$inter-font-family
+            font-size: 18px
+
+.busca
+    background: #151B26
+    border-radius: 37px
+    border-style: none
+    height: 40px
+    width: 292px
+    padding: 8px, 100px, 8px, 24px
+    color: white
+
+.conatiner_alfabeto
+    @include mixins.container
+
+.container_novidades
+    h3
+        margin-top: 80px
+        margin-left: 62px
+        font-size: 32px
+        font-family: variables.$rubik-font-family
+
+    p
+        margin-left: 62px
+        font-size: 24px
+        font-family: variables.$inter-font-family
+        color: #BFBFBF
+        margin-bottom: 40px
+
+.banner
 
 
-h3
-    font-family: variables.$rubik-font-family 
-
-li 
-    font-family: variables.$inter-font-family
+.banner_conteudo
+    border: solid 1px black
+    @include mixins.container    
+        
         
