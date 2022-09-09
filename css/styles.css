@@ -1,3 +1,29 @@
+* {
+  color: #FFFFFF;
+}
+
+body {
+  background: #0C0C0C;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00A3FF;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 25px;
+}
+
 h3 {
   font-family: "Rubik", sans-serif;
 }
