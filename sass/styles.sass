@@ -2,10 +2,12 @@
 @use 'mixins'
 
 *
-   
-
+    margin:0
+    padding: 0
+    
 body
     background-color:  #0C0C0C
+    @include mixins.container
 
 .header
     display: flex
@@ -30,6 +32,7 @@ nav
             margin: 0 25px
             font-family: variables.$inter-font-family
             font-size: 18px
+            color: #fefefe
 
 .busca
     background: #151B26
@@ -41,27 +44,29 @@ nav
     color: white
 
 .conatiner_alfabeto
-    @include mixins.container
+    
 
 .container_novidades
-    h3
+
+.title_novidade
         margin-top: 80px
-        margin-left: 62px
+        color: #fefefe
         font-size: 32px
         font-family: variables.$rubik-font-family
 
-    p
-        margin-left: 62px
+.subtitle_novidade
         font-size: 24px
         font-family: variables.$inter-font-family
         color: #BFBFBF
         margin-bottom: 40px
 
 .banner
-
-
+    position: relative
+   
 .banner_conteudo
     border: solid 1px black
-    @include mixins.container    
+    position: absolute
+    top: 260px
+      
         
         
