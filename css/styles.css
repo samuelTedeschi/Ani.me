@@ -37,7 +37,7 @@ nav ul li {
   margin: 0 25px;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  color: #fefefe;
+  color: #FFFFFF;
 }
 
 .busca {
@@ -50,9 +50,28 @@ nav ul li {
   color: white;
 }
 
+.container_alfabeto {
+  overflow: auto;
+  white-space: nowrap;
+}
+.container_alfabeto input {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 8px, 4px, 6px, 0px;
+  text-decoration: none;
+  width: 108px;
+  height: 46px;
+  border-radius: 37px;
+  border: 2px solid #151B26;
+  background: #151B26;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
 .title_novidade {
   margin-top: 80px;
-  color: #fefefe;
+  color: #FFFFFF;
   font-size: 32px;
   font-family: "Rubik", sans-serif;
 }
@@ -69,9 +88,51 @@ nav ul li {
 }
 
 .banner_conteudo {
-  border: solid 1px black;
   position: absolute;
   top: 260px;
+  bottom: 40px;
+  right: 450px;
+}
+
+.title_banner {
+  margin-left: 44px;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.p_banner {
+  margin-left: 44px;
+  font-family: "Inter", sans-serif;
+  color: #BFBFBF;
+}
+
+.title {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.container_imgs img {
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+
+.btn_vermais {
+  width: 182px;
+  height: 48px;
+  background: #151B26;
+  border-style: none;
+  border-radius: 4px;
+  padding: 8px, 100px, 8px, 102px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-left: 500px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

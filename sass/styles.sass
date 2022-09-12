@@ -32,7 +32,7 @@ nav
             margin: 0 25px
             font-family: variables.$inter-font-family
             font-size: 18px
-            color: #fefefe
+            color: variables.$color-white
 
 .busca
     background: #151B26
@@ -43,30 +43,78 @@ nav
     padding: 8px, 100px, 8px, 24px
     color: white
 
-.conatiner_alfabeto
-    
+.container_alfabeto
+    overflow: auto
+    white-space: nowrap
 
-.container_novidades
+    input
+        display: inline-block
+        color: white
+        text-align: center
+        padding: 8px, 4px, 6px, 0px
+        text-decoration: none
+        width: 108px
+        height: 46px
+        border-radius: 37px
+        border: 2px solid #151B26
+        background: #151B26
+        margin-bottom: 30px
+        margin-left: 15px
 
 .title_novidade
         margin-top: 80px
-        color: #fefefe
+        color: variables.$color-white
         font-size: 32px
         font-family: variables.$rubik-font-family
 
 .subtitle_novidade
         font-size: 24px
         font-family: variables.$inter-font-family
-        color: #BFBFBF
+        color: variables.$color-gray
         margin-bottom: 40px
 
 .banner
     position: relative
    
 .banner_conteudo
-    border: solid 1px black
     position: absolute
     top: 260px
-      
-        
+    bottom: 40px
+    right: 450px
+
+.title_banner 
+    margin-left: 44px
+    font-family: variables.$rubik-font-family
+    font-size: 36px
+    color: variables.$color-white
+    margin-bottom: 8px
+
+.p_banner
+    margin-left: 44px
+    font-family: variables.$inter-font-family
+    color: variables.$color-gray
+    
+.title
+    margin-top: 80px
+    margin-bottom: 40px
+    font-family: variables.$rubik-font-family
+    font-size: 32px
+    color: variables.$color-white
+    font-weight: 400
+
+.container_imgs
+    img
+        @include mixins.container-imgs
+
+.btn_vermais
+    width: 182px
+    height: 48px
+    background: #151B26
+    border-style: none
+    border-radius: 4px
+    padding: 8px, 100px, 8px, 102px
+    color: variables.$color-white
+    text-transform: uppercase
+    margin-left: 500px
+    cursor: pointer
         
