@@ -67,6 +67,7 @@ nav ul li {
   background: #151B26;
   margin-bottom: 30px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .title_novidade {
@@ -117,9 +118,21 @@ nav ul li {
   font-weight: 400;
 }
 
-.container_imgs img {
+.container_imgs {
   margin-left: 10px;
   margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.title-anime {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  margin-bottom: 70px;
+  margin-top: 16px;
+  text-justify: auto;
 }
 
 .btn_vermais {
@@ -133,6 +146,13 @@ nav ul li {
   text-transform: uppercase;
   margin-left: 500px;
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #BFBFBF;
+  margin-bottom: 48px;
 }
 
 /*# sourceMappingURL=styles.css.map */

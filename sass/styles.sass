@@ -60,6 +60,7 @@ nav
         background: #151B26
         margin-bottom: 30px
         margin-left: 15px
+        cursor: pointer
 
 .title_novidade
         margin-top: 80px
@@ -103,8 +104,16 @@ nav
     font-weight: 400
 
 .container_imgs
-    img
-        @include mixins.container-imgs
+    @include mixins.container-imgs
+
+.title-anime
+    color: variables.$color-white
+    text-align: center
+    font-family: variables.$rubik-font-family
+    font-size: 18px
+    margin-bottom: 70px
+    margin-top: 16px
+    text-justify: auto
 
 .btn_vermais
     width: 182px
@@ -118,3 +127,8 @@ nav
     margin-left: 500px
     cursor: pointer
         
+footer
+    text-align: center
+    font-family: variables.$inter-font-family
+    color: variables.$color-gray
+    margin-bottom: 48px
